@@ -1,0 +1,707 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+#imagehead{
+
+padding: 20px ;
+border-radius: 20px ;
+height: 400px;
+
+ display: flex;
+    flex-direction: column;
+    align-items: center;     
+    justify-content: center; 
+        
+    text-align: center; 
+    background-image: url("images/menuimage.jpg");
+ background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+#imagehead3{
+
+padding: 20px ;
+border-radius: 20px ;
+height: 400px;
+
+ display: flex;
+    flex-direction: column;
+    align-items: center;     
+    justify-content: center; 
+      transition: background-image 1s ease-in-out;  
+    text-align: center; 
+    background-image: url("images/menuimage.jpg");
+ background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+#descriptionabout p{
+    font-size: 18px; /* adjust size as you like */
+  line-height: 1.6; /* improves readability */
+  color: white;    
+}
+#menu-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #f8f8f8;
+
+}
+#journey{
+  font-size: 18px;
+  
+ 
+  color: white ;     
+}
+#imageheadabout {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  height: 800px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-image: url("images/history.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+#imageheadreserve {
+  position: relative;
+  padding: 20px;
+  border-radius: 20px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("images/booking.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Dark overlay over the background image */
+#imageheadreserve .form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4); /* You can adjust opacity */
+  z-index: 1;
+  border-radius: 20px;
+}
+
+/* Form styling */
+#reservation-form {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 15px;
+  max-width: 700px; /* Increased from 500px to 700px */
+  width: 100%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#reservation-form h2 {
+  margin-bottom: 25px;
+  color: #b8860b;
+  font-size: 28px;
+}
+
+#reservation-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: left;
+  font-size: 16px;
+}
+
+#reservation-form input,
+#reservation-form button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 6px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#reservation-form button {
+  background-color: #b8860b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 25px;
+  transition: background-color 0.3s ease;
+}
+
+#reservation-form button:hover {
+  background-color: #a07409;
+}
+.form-background {
+  position: relative;
+  background-image: url("images/reservation-bg.jpg"); /* your background image */
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark transparent overlay */
+  z-index: 1;
+}
+
+#reservation-form {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9); /* light background with slight transparency */
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#reservation-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #b8860b;
+}
+
+#reservation-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#reservation-form input,
+#reservation-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+#reservation-form button {
+  background-color: #b8860b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#reservation-form button:hover {
+  background-color: #a07409;
+}
+#descriptionabout{
+     flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   flex-direction: column;
+}
+
+#imageheadabout .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  border-radius: 20px;
+}
+#imageheadabout p{
+      font-size: 18px;
+  line-height: 1.6;
+  
+  color: white ;
+}
+#imageheadreserveh2{
+  
+  
+  color: white ;
+}
+#middleabout{
+display: flex;
+   justify-content: center; /* Centers horizontally */
+  align-items: center; 
+  gap: 20px;
+  padding: 10px ;
+  margin-top: 15px ;
+  border-radius: 15px;
+  height: 400px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: scale(1);
+  border-style: solid;
+  border-color:		#bf9b30;
+  border-width: 6px;
+  transition: transform 0.3s ease;
+  background-color: #222;
+}
+#middleabout p{
+      font-size: 18px;
+     line-height: 1.6;
+  
+  color: white ; 
+}
+#middleabout h2{
+     font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Text stays above the overlay */
+#imageheadabout .text-content {
+  position: relative;
+  z-index: 2;
+  
+  color: white;
+}
+
+/* Style for title and timeline */
+#imagetitle {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  margin-top: 40px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+#Journey {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+
+
+
+.menu-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; 
+  margin-top: 20px;
+   background-color: #222;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+
+.menu-images img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.menu-images img:hover {
+  transform: scale(1.05);
+}
+#Aboutus{
+    margin-top : 20px ;
+    padding: 10px;
+    border-top: solid;
+     border-bottom: solid;
+     display: flex ;
+     justify-content: center;
+}
+#aboutuscontainer{
+    margin-top: 20px;
+position: relative;
+  background-image: url("images/houseimage.webp");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  border-radius: 10px;
+  padding: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  overflow: hidden;
+   background-color: rgba(0, 0, 0, 0.5); /* ensure overlay stays inside */
+ 
+}
+.social-icons-column {
+  display: flex;
+  flex-direction: column;  /* 🔄 Stack items vertically */
+  align-items: flex-start; /* Align left inside the container */
+  gap: 12px;               /* Add space between items */
+  margin-top: 20px;
+}
+#footerart p{
+    line-height: 30px;
+}
+
+.social-icons-column a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons-column a:hover {
+  color: #f39c12; /* Highlight on hover */
+}
+#footer{
+    display: flex;
+    height : 400px ;
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#footerart{
+    flex: 1;
+    padding : 20px;
+}
+
+#aboutuscontainer h2,
+#aboutuscontainer p {
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* adds glow around text */
+}
+#aboutuscontainer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* adjust darkness here */
+  z-index: 0;
+  border-radius: 10px;
+}
+#imageheadabout::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* adjust darkness here */
+  z-index: 0;
+  border-radius: 10px;
+}
+
+#aboutuscontainer h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+#imagehead  p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  color: white ;
+}
+#imagehead3  p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  color: white ;
+}
+
+#aboutuscontainer p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  color: white ;
+}
+
+#description2{
+    flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   flex-direction: column;
+}
+#description2 p{
+    font-size: 18px; /* adjust size as you like */
+  line-height: 1.6; /* improves readability */
+  color: #444;    
+}
+
+
+#middle{
+    display: flex;
+   justify-content: center; /* Centers horizontally */
+  align-items: center; 
+  gap: 20px;
+  padding: 10px ;
+  margin-top: 15px ;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+#description{
+    
+ flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   flex-direction: column;
+}
+#description p {
+  font-size: 18px; /* adjust size as you like */
+  line-height: 1.6; /* improves readability */
+  color: #444;     /* optional: softer text color */
+}
+#img{
+    flex : 1;
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#img img {
+ width: 100%;
+  height: auto;
+  max-width: 500px;   /* increase this if needed */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+nav{
+ display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;  
+  background-color: #222;  /* Optional: Dark background for visibility */
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+ul{
+    list-style: none;        
+  display: flex;  
+    gap: 40px;               
+  padding: 0;
+  margin: 0;
+}
+ul li{
+    color: white;           
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+
+}
+ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #b8860b;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+ul li:hover::after {
+  transform: scaleX(1);  
+}
+
+#imagehead h2{
+    color : white;
+    font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+ 
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+#imagehead3 h2{
+    color : white;
+    font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+ 
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+#success-message {
+  background-color: #e6ffe6;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: #2e7d32;
+  max-width: 500px;
+}
+#contactus{
+
+    
+   background-color: #ff5722; /* Vibrant color */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Depth */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+   
+   
+}
+
+#page{
+    padding: 10;
+}
+#bookbuttonfooter{
+    background-color: #ff5722; /* Vibrant color */
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Depth */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+/* ------------------------------
+   📱 MOBILE OPTIMIZATION START
+   ------------------------------ */
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  ul li {
+    font-size: 16px;
+  }
+
+  #imagehead,
+  #imagehead3,
+  #imageheadabout,
+  #imageheadreserve {
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  #imagehead h2,
+  #imagehead3 h2,
+  #imagetitle,
+  .section-title,
+  #aboutuscontainer h2 {
+    font-size: 1.8rem;
+  }
+
+  #imagehead p,
+  #imagehead3 p,
+  #descriptionabout p,
+  #aboutuscontainer p,
+  #middleabout p,
+  #description p,
+  #description2 p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  #middle,
+  #middleabout {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  #img img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .menu-images {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #reservation-form {
+    padding: 25px;
+    max-width: 95%;
+  }
+
+  #footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  #footerart {
+    padding: 10px;
+  }
+
+  #aboutuscontainer {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .social-icons-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #contactus,
+  #bookbuttonfooter {
+    width: 100%;
+    font-size: 1rem;
+    padding: 12px;
+    margin-top: 10px;
+  }
+}
